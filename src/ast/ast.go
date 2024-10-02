@@ -47,3 +47,13 @@ func (s *VarStatement) TokenLiteral() string {
 	return s.Token.Literal
 }
 func (s *VarStatement) statementNode() {}
+
+type ReturnStatement struct {
+	Token token.Token
+	Value Expression
+}
+
+func (s *ReturnStatement) TokenLiteral() string {
+	return s.Token.Literal
+}
+func (s *ReturnStatement) statementNode() {}
